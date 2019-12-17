@@ -1,13 +1,13 @@
 from abc import ABCMeta, abstractmethod
 
 #Base Class
-class Transaction(metaclass = ABCMeta):
+class Transaction(metaclass = ABCMeta): #Command Interface
     @abstractmethod
     def execute(self):
         pass
     
 #Child Class 1
-class SELECT(Transaction):
+class SELECT(Transaction):  #Command_1 class implementing Command Interface
     def __init__(self, transaction):
         self.trans = transaction
      
@@ -15,7 +15,7 @@ class SELECT(Transaction):
         self.trans.SELECT()
 
 #Child Class 2        
-class INSERT(Transaction):
+class INSERT(Transaction):   #Command_2 class implementing Command Interface
     def __init__(self, transaction):
         self.trans = transaction
     
@@ -23,7 +23,7 @@ class INSERT(Transaction):
         self.trans.INSERT()
 
 #Child Class 3
-class UPDATE(Transaction):
+class UPDATE(Transaction):   #Command_3 class implementing Command Interface
     def __init__(self, transaction):
         self.trans = transaction
     
@@ -31,7 +31,7 @@ class UPDATE(Transaction):
         self.trans.UPDATE()
 
 
-class TransactionManager:
+class TransactionManager:    #Receiver
     def SELECT(self):
         print("Performing SELECT Operation.")
         
@@ -42,7 +42,7 @@ class TransactionManager:
         print("Performing UPDATE Operation.")
 
 
-class TransactionBroker:
+class TransactionBroker:    #Invoker
     def __init__(self,):
         self.__transactionQueue = []
         
