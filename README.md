@@ -27,13 +27,14 @@ This type deals with the communication between classes and objects.
 
 Let's explore some Design Patterns....
 
+
 #### Singleton
 This pattern restricts the instantiation of a class to one object. 
 It is a type of creational pattern and involves only one class to create methods and specified objects.
 
-__Example -__ In real world, a good example of Singleton pattern would The President of a nation. 
+__Example -__ In real world, a good example of Singleton pattern would be __The President__ of a nation. 
 Since a nation can have ONLY ONE president, anytime someone calls/invokes/addresses the 'President' 
-only one and the same guy should show up that is appointed as the president.
+only ONE AND THE SAME guy should show up that is appointed as the president.
 
 
 
