@@ -2,7 +2,7 @@ __Pre-Requisites:__
 Understanding of Object Oriented concepts like Abstraction, Inheritance, Polyorphism and Encapsulation.
 Knowledge of classes, Interfaces and Abstract classes will be very helpful.
 
-# DesignPatterns
+# Design Patterns
 Design Patterns are evolved as reusable soltions to the problems that we encounter every day of programming.
 Genereally, tey are targeted at solving the problems of object generation and integration.
 These generalized patterns act as templates that can be applied to the real-world problems.
@@ -36,5 +36,8 @@ __Example -__ In real world, a good example of Singleton pattern would be __The 
 Since a nation can have ONLY ONE president, anytime someone calls/invokes/addresses the 'President' 
 only ONE AND THE SAME guy should show up that is appointed as the president.
 
+In simple words, Singleton limits the creation of a class to only one object.
+Why?
+Maybe you might need only one instance of a class to co-ordinate actions across the system.
 
 
